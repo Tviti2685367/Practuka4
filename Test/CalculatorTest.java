@@ -3,11 +3,11 @@ import Pr2.TextResultFactory; // Добавлен импорт класса Text
 
 public class CalculatorTest {
     public void testCalculations() {
-        ProblemSolver solver = new ProblemSolver(10, 5, new TextResultFactory()); // Исправлена ошибка здесь
+        ProblemSolver solver = new ProblemSolver(15, 21, new TextResultFactory()); // Исправлена ошибка здесь
         solver.solveProblem();
 
         double result = solver.getResult();
-        double expected = 15;
+        double expected = 36;
 
         if (result == expected) {
             System.out.println("Тест вычислений пройден успешно.");
